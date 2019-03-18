@@ -55,6 +55,7 @@ $(function(){
         Juego();
     }
 
+    //Columnas de tres imagenes iguales
     function Columnas (){
         var ac = false
         for (var c = 1; c <= 7; c++) {
@@ -73,6 +74,7 @@ $(function(){
         return ac
     }
 
+    //Filas de tres imágenes "Dulces" iguales
     function Filas (){
         var af = false
         for (var f = 1; f <= 7; f++) {
@@ -91,6 +93,7 @@ $(function(){
         return af
     }
 
+    //Borrar o suprimir tres o mas imágenes "Dulces" iguales
     function Juego() {
       anf = Filas()
       anc= Columnas()
