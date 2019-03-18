@@ -1,5 +1,6 @@
 $(function(){
     iniciar();
+    
     //Cambio de color del título “Match Game”
     function CambiarColor(selector) {
   	    $(".main-titulo").animate({
@@ -100,6 +101,7 @@ $(function(){
         }
     }
     
+    //Obteniendo puntaje del juego
     var PuntajeTotal=0;
     function BorrarDulces (){
         $(".igual").hide("pulsate",1000, function () {
@@ -123,6 +125,7 @@ $(function(){
         Juego();
     }
 
+    //Obteniendo número de movimientos
     var MovimientoTotal=0;
     function MoverDulces(){
         var dulce1
@@ -150,6 +153,7 @@ $(function(){
         })
     }
 
+    //Iniciar o reiniciar el juego con un temporizador
     var segundos = 0;
     var minuto = 2;
 
@@ -177,6 +181,7 @@ $(function(){
         }, "slow")
     }
 
+    //Botón para reiniciar el juego
     $(".btn-reinicio").click(function() {
         var textoboton = $(this).text()
         LlenarTablero();
